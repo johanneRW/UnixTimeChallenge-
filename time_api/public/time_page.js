@@ -1,25 +1,22 @@
 const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-const monthOptions = document.getElementById("month");
+const monthOptions = document.getElementById("month")
 months.forEach(month => {
     const option = document.createElement("option")
     option.innerText = month
     monthOptions.appendChild(option)
+})
 
-});
-
-const decades = ["70,s", "80's", "90's", "00's", "10's", "20's", "30's"]
+const decades = ["70's", "80's", "90's", "00's", "10's", "20's", "30's"]
 const decadeOptions = document.getElementById("decade")
 decades.forEach(decade => {
     const option = document.createElement("option")
     option.innerText = decade
     decadeOptions.appendChild(option)
-
-});
+})
 
 function show(name) {
     const element = document.getElementById(name)
     element.classList.remove("hidden")
-
 }
 
 function hide(name) {
@@ -32,7 +29,6 @@ function displayHurra() {
     hide("sorry")
 }
 
-
 function displaySorry() {
     show("sorry")
     hide("hurra")
@@ -42,7 +38,7 @@ let unixTime = 0
 
 function newRandomDate() {
     unixTime = getRandomUnixTime()
-    const unixTimeWhitoutMilliseconds=Math.floor(unixTime/1000)
+    const unixTimeWhitoutMilliseconds = Math.floor(unixTime / 1000)
     const unixTimeElement = document.getElementById("unix-time")
     unixTimeElement.textContent = unixTimeWhitoutMilliseconds
 
@@ -55,10 +51,10 @@ function newRandomDate() {
 }
 
 function getRandomUnixTime() {
-    const minUnixTime = 0;
-    const maxUnixTime = 2147483647 * 1000; // Maximum Unix time (January 19, 2038)whit milliseconds
-    const randomUnixTime = Math.floor(Math.random() * (maxUnixTime - minUnixTime + 1) + minUnixTime);
-    return randomUnixTime;
+    const minUnixTime = 0
+    const maxUnixTime = 2147483647 * 1000 // Maximum Unix time (January 19, 2038)whit milliseconds
+    const randomUnixTime = Math.floor(Math.random() * (maxUnixTime - minUnixTime + 1) + minUnixTime)
+    return randomUnixTime
 }
 
 function revealAnswer() {
@@ -80,7 +76,7 @@ function yearmonthChek() {
     }
 }
 
-function yearChek() { 
+function yearChek() {
     const yearB = document.getElementById("yearB")
     const yearBValue = parseInt(yearB.value)
     const unixDateTime = new Date(unixTime)
@@ -111,6 +107,5 @@ function getDecadeStart(num) {
 function getDecadeEnd(num) {
     return new Date(1979 + (num * 10), 11, 31)
 }
-
 
 newRandomDate()

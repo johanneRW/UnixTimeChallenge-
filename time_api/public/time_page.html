@@ -9,15 +9,17 @@
 </head>
 
 <body>
-    <h1>The Unix Time Guess chalenge</h1>
-    <p>Given a random unix-time can you guess what year, month or decade it is?</p>
-    <p>Random Unix-time: <span id="unix-time"></span></p>
-    <div>The time is between 1. januar 1970 at 00:00:00 (when unix started) and 19. januar 2038 at 03:14:07 UTC (when
-        unix "runs-out")</div> 
-    
+    <h1>The Unix Timestamp Guess challenge</h1>
+    <p>Given a random Unix timestamp, can you guess what year, month or decade it is?</p>
+    <p>Your random Unix timestamp: <span id="unix-time"></span></p>
+    <div>
+        The time is between January 1st 1970 at 00:00:00 (when Unix time started) 
+        and January 19th 2038 at 03:14:07 UTC (when Unix time "runs out")
+    </div>
+
     <form id="form">
         <p>
-        <div id="realyDifficult">The realy defficult one:</div>
+        <div id="realyDifficult">The really difficult one:</div>
         <label for="yearMonthGuess">Write a year and choose a month</label>
         <br>
         <input type="number" id="yearA" placeholder="yyyy">
@@ -33,7 +35,7 @@
         </p>
 
         <p>
-        <div id="easy">The not so defficult one:</div>
+        <div id="easy">The not so difficult one:</div>
         <label for="decadeGuess">Choose a decade:</label>
         <select name="decadeOptions" id="decade"></select>
         <button type="button" onclick="decadeChek()">Submit</button>
@@ -42,14 +44,14 @@
         <input type="reset" id="reset" value="Clear guesses">
     </form>
     <br>
-    <button type="button" id="newRandom"onclick="newRandomDate()">Get a new date</button>
+    <button type="button" id="newRandom" onclick="newRandomDate()">Get a new timestamp</button>
     <button type="button" id="reveal" onclick="revealAnswer()">Reveal the answer</button>
     <br>
     <div id="hurra" class="hidden">
-        Congratulation!! You guessed it!
+        Congratulations!!! You guessed it!
     </div>
     <div id="sorry" class="hidden">
-        Sorry, wrong answer try again.
+        Sorry, wrong answer. Try again.
     </div>
     <div id="answer" class="hidden">
     </div>

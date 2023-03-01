@@ -1,0 +1,2 @@
+vercel.json serves static (JS, CSS) files via "vercel/static".
+Based on https://stackoverflow.com/a/72999137

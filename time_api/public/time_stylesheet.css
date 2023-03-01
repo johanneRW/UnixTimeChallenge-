@@ -1,3 +1,17 @@
+body {
+    margin-left: 8vw;
+}
+
+form p {
+    margin-top: 5vh;
+}
+
+form div {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1vh;
+}
+
 .hidden {
     display: none
 }
@@ -15,19 +29,16 @@
 }
 
 #answer {
-    background-color: rgb(227, 188, 141);
+    background-color: rgb(242, 219, 126);
     width: 100vh;
-
 }
 
 #newRandom {
-    background-color: rgb(60, 191, 178);
-
+    background-color: rgb(124, 215, 206);
 }
 
 #reveal {
-    background-color: rgb(198, 97, 130);
-
+    background-color: rgb(210, 143, 165);
 }
 
 #unix-time {
@@ -35,34 +46,18 @@
     color: rgb(101, 5, 101);
 }
 
-form div {
-    font-weight: bold;
-    font-size: large;
-    margin-bottom: 1vh;
-}
-
 #realyDifficult {
     color: red;
-
 }
 
 #difficult {
     color: orange;
-
 }
 
 #easy {
     color: green;
 }
 
-body {
-    margin-left: 8vw;
-}
-
-form p {
-    margin-top: 5vh;
-}
-
 #reset {
-    background-color: rgb(144, 143, 143);
+    background-color: rgb(183, 181, 181);
 }
