@@ -1,0 +1,68 @@
+.hidden {
+    display: none
+}
+
+#hurra {
+    background-color: green;
+    color: white;
+    width: 100vh;
+}
+
+#sorry {
+    background-color: red;
+    color: white;
+    width: 100vh;
+}
+
+#answer {
+    background-color: rgb(227, 188, 141);
+    width: 100vh;
+
+}
+
+#newRandom {
+    background-color: rgb(60, 191, 178);
+
+}
+
+#reveal {
+    background-color: rgb(198, 97, 130);
+
+}
+
+#unix-time {
+    font-weight: bold;
+    color: rgb(101, 5, 101);
+}
+
+form div {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1vh;
+}
+
+#realyDifficult {
+    color: red;
+
+}
+
+#difficult {
+    color: orange;
+
+}
+
+#easy {
+    color: green;
+}
+
+body {
+    margin-left: 8vw;
+}
+
+form p {
+    margin-top: 5vh;
+}
+
+#reset {
+    background-color: rgb(144, 143, 143);
+}
