@@ -6,9 +6,6 @@ const app = express()
 app.use(express.static("public"))
 app.use(bodyParser.json())
 
-express.static.mime.define({'text/css': ['css']});
-express.static.mime.define({'text/javascript': ['js']})
-
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/time_page.html")
 })

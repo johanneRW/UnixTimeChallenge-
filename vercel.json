@@ -3,13 +3,25 @@
     "builds": [
         {
             "src": "time_api/time_app.js",
-            "use": "@now/node"
+            "use": "@vercel/node"
+        },
+        {
+            "src": "time_api/public/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "time_api/time_app.js"
+        },
+        {
+            "src": "/",
+            "dest": "time_api/public/time_page.html"
+        },
+        {
+            "src": "/(.+)",
+            "dest": "time_api/public/$1"
         }
     ]
 }
