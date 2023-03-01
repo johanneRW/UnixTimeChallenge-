@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+     
+        "src": "time_api/time_app.js",
+       
+        "use": "@now/node"
+      }
+    ],
+    "routes": [
+        {
+          
+          "src": "/(.*)",
+        
+          "dest": "time_api/time_app.js"
+        }
+      ]
+  }
+  
