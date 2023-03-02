@@ -31,6 +31,7 @@ function displayHurra() {
 
 function displaySorry() {
     show("sorry")
+    setTimeout(() => {hide("sorry")}, 1000)
     hide("hurra")
 }
 
