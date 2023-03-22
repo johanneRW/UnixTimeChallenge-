@@ -1,1 +1,0 @@
-import "../../dist/js/bootstrap.bundle.min.js";
