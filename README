@@ -1,2 +1,3 @@
-vercel.json serves static (JS, CSS) files via "vercel/static".
-Based on https://stackoverflow.com/a/72999137
+Try it at https://unix-time-challenge.vercel.app/
+
+It's a small game where you have to know your Unix time stamps.
